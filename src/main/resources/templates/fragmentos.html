@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es"  xmlns:th="http://www.thymeleaf.com" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="shortcut icon" th:href="@{/img/logo.png}" type="image/x-icon">
+    <title th:text="${titulo}">SkillTest</title>
+</head>
+
+<header th:fragment="header">
+
+
+
+    <nav class="navbar navbar-light  fixed-top" style="background-color: #2E4159;">
+
+        <div class="container-fluid" style="background-color: #2E4159; font-size: x-large;">
+
+            <div class="logo">
+                <img th:src="@{/img/logo.png}" alt="" width="60px" height="60px">
+                <a class="navbar-brand" th:href="@{/}" style="color: rgb(255, 254, 254);">Skill Test</a>
+            </div>
+
+            <button class="navbar-toggler logo" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                <img th:src="@{/img/user.png}" alt="" height="30px" width="30px">
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+                 style="background-color: #2E4159;">
+                
+                 <div class="offcanvas-header">
+
+                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" th:text="|${session.usuarioEnSesion.nombreUsuario}|"></h5>
+
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                            <div class="perfil">
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link  opciones" th:href="@{/usuario/__${session.usuarioEnSesion.id}__}" style="color: white;">Datos Personales</a>
+                                                </li>
+
+                                                        <li class="nav-item">
+                                                            <a class="nav-link  opciones" th:href="@{/usuario/__${session.usuarioEnSesion.id}__/#notas}" style="color: white;">Mis Examenes</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link  opciones" th:href="@{/usuario}" style="color: white;" sec:authorize="hasRole('ADMIN')">Administrar Usuarios</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link  opciones" th:href="@{/categoria/admin}" style="color: white;" sec:authorize="hasRole('ADMIN')">Administrar Categorias</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link  opciones" th:href="@{/tematica/admin}" style="color: white;" sec:authorize="hasRole('ADMIN')">Administrar Tematicas</a>
+                                                        </li>
+
+
+
+                                                        <li class="nav-item">
+                                                            <form th:action="@{/logout}">
+                                                                <a class="nav-link text-white opciones" href="#" onclick="this.parentNode.submit();"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                                                            </form>
+                                                        </li>
+
+                                            </div>
+
+                                        </ul>
+
+
+                                                                    <div>
+                                                                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                                                        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_wnceyokk.json" background="transparent"
+                                                                                       speed="0.7" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </nav>
+    <!--
+                                                    <div th:unless="${error.isEmpty()}" class="row" style="justify-content: center; height: 30%; margin-top: 5%;">
+
+                                                        <div class="card text-white  mb-3 tarjetasExcepciones col-8" style="margin-top: 2%;">
+                                                  
+                                                            <div class="card-body" style="color: white;">
+                                                              <h5 class="card-title">ERROR</h5>
+                                                              <p class="card-text" th:text="${error}">Descripcion de la excepciones</p>
+                                                            </div>
+                                                  
+                                                          </div>
+                                                  
+                                                  
+                                                    </div>
+                                                    -->
+                                                  
+ </header>
+
+<footer th:fragment="footer" class="container-fluid">
+    <div class="row">
+        <div class="col-4 contenidoFooter">
+            <div>
+                <a href="Turnos" class="opciones">
+                    <p>Cursos</p>
+                </a>
+                <a href="obras"  class="opciones">
+                    <p>Fuentes de informacion</p>
+                </a>
+                <a href="registro" class="opciones">
+                    <p>Certificados</p>
+                </a>
+                <p class="opciones">@Copyright SkillTest</p>
+            </div>
+        </div>
+        <div class="col-4 contenidoFooter">
+
+            <div class="opciones">
+                <p> Informacion de contacto: </p>
+                <p>Email: skilltest_school@gmail.com</p>
+                <p>Telefono: 1166046826 / 42648893</p>
+            </div>
+        </div>
+
+        <div class="col-4 contenidoFooter redesSociales">
+            <div class="opciones"> <a href="https://www.facebook.com/enespanol/" target="_blank">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_7akxvutj.json" background="transparent"
+                                speed="1" style="width: 60px; height: 60px;"  loop autoplay></lottie-player>
+            </a>
+            </div>
+
+            <div class="opciones"> <a href="https://twitter.com/home" target="_blank">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_hdy0htc2.json" background="transparent"
+                                speed="1" style="width: 60px; height: 60px;"  loop autoplay></lottie-player>
+            </a>
+            </div>
+
+            <div class="opciones"> <a href="https://ar.linkedin.com/" target="_blank">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_atjsyyed.json" background="transparent"
+                                speed="1" style="width: 60px; height: 60px;"  loop autoplay></lottie-player>
+            </a>
+            </div>
+
+            <div class="opciones"> <a href="https://github.com/" target="_blank">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_kq6zs04j.json" background="transparent"
+                                speed="1" style="width: 60px; height: 60px;" hover autoplay></lottie-player>
+            </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div th:fragment="errores">
+
+    <div class="container mt-5 alert-danger alert" th:if="${duplicado != null}">
+        <p th:text="${duplicado}"></p>
+        <a class="btn btn-secondary btn-sm" th:href="@{/autores}">Listado de autores</a>
+    </div>
+
+    <div class="container mt-5 alert-danger alert" th:if="${eliminado != null}">
+        <p th:text="${eliminado}"></p>
+        <a class="btn btn-secondary btn-sm" th:href="@{/autores/eliminados}">Cementerio de autores</a>
+    </div>
+
+</div>
+
+</html>

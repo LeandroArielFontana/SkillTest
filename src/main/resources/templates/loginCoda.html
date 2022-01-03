@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" th:href="@{/css/loginRegisterStyle.css}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>SchoolHouse</title>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-light  fixed-top" style="background-color: #2E4159;">
+
+      <div class="container-fluid" style="background-color: #2E4159; font-size: x-large;">
+
+        <div class="logo">
+          <img th:src="@{/img/logo.png}" alt="" width="60px" height="60px">
+
+          <a class="navbar-brand" href="#" style="color: rgb(255, 254, 254);">SchoolHouse</a>
+        </div>
+    </nav>
+
+  </header>
+
+
+
+
+  <main>
+    <!-- SECCION PRINCIPAL -->
+    <div class="container-fluid seccionPrincipal">
+
+      <form th:action="@{/logincheck}" method="post">
+        <div class="imgcontainer">
+          <img th:src= "@{/img/logo.png}" alt="LoginImg" class="loginImg">
+        </div>
+      
+        <div class="container">
+          <label><b>Correo Electronico</b></label>
+          <input type="text" placeholder="Ingresar email" name="mail" required>
+      
+          <label><b>Contraseña</b></label>
+          <input type="password" placeholder="Ingresar contraseña" name="contrasenia" required>
+      
+          <button type="submit">Ingresar</button>
+        </div>
+      
+        <div class="container">
+          <button type="button" class="cancelbtn">Cancelar</button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+
+  <footer class="container-fluid">
+
+    <div class="row">
+
+
+      <div class="col-4 contenidoFooter">
+        <div>
+          <a href="Turnos.php" class="opciones">
+            <p>Cursos</p>
+          </a>
+          <a href="obras.php"  class="opciones">
+            <p>Fuentes de informacion</p>
+          </a>
+          <a href="registro.php" class="opciones">
+            <p>Certificados</p>
+          </a>
+          <p class="opciones">@Copyright SchoolHouse™</p>
+        </div>
+
+      </div>
+
+      <div class="col-4 contenidoFooter">
+
+        <div class="opciones">
+          <p> Informacion de contacto: </p>
+          <p>Email: SchoolHouse@gmail.com</p>
+          <p>Telefono: 1166046826 / 42648893</p>
+        </div>
+      </div>
+
+
+      <div class="col-4 contenidoFooter redesSociales">
+
+
+
+        <div class="opciones"> <a href="https://www.facebook.com/enespanol/" target="_blank">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_7akxvutj.json" background="transparent"
+              speed="1" style="width: 60px; height: 60px;"  loop autoplay></lottie-player>
+          </a>
+
+        </div>
+
+
+        <div class="opciones"> <a href="https://ar.linkedin.com/" target="_blank">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_hdy0htc2.json" background="transparent"
+              speed="1" style="width: 60px; height: 60px;"  loop autoplay></lottie-player>
+          </a>
+        </div>
+
+
+        <div class="opciones"> <a href="https://ar.linkedin.com/" target="_blank">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_atjsyyed.json" background="transparent"
+            speed="1" style="width: 60px; height: 60px;"  loop autoplay></lottie-player>
+        </a>
+      </div>
+
+
+
+        <div class="opciones"> <a href="https://ar.linkedin.com/" target="_blank">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_kq6zs04j.json" background="transparent"
+              speed="1" style="width: 60px; height: 60px;" hover autoplay></lottie-player>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

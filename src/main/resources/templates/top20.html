@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragmentos::head"></head>
+
+<body>
+
+<header th:replace="fragmentos :: header"></header>
+
+
+
+
+<main>
+
+
+
+        <!-- SECCION PRINCIPAL -->
+        <div class="container-fluid seccionPrincipal">
+
+            
+            
+         
+         <div class="row">
+
+           
+
+            <div class="col-3" id="top5" style="margin-top: 5%;" th:each="examen : ${examenes}">
+  
+                <div class="card text-white  mb-3 tarjetaTopMain" style="width: 100%; margin-top: 5%;">
+
+
+                  <div class="card-body" style="margin-right: 3%; margin-left: 3%;" >
+                      <div style="display: flex; justify-content: center;">  
+                    <h2 class="card-title opciones" th:text="${examen.examenDTO.nombre}">NOMBRE DE EXAMEN</h2>
+                </div>
+
+                <DIV style="display: inline;">
+
+                    <div class="card w-100 tarjetaTop" style="width: 49%;" >
+                        <div class="card-body">
+                            <h5 class="card-title" th:text="|DIFICULTAD: ${examen.examenDTO.dificultad}|">Dificultad</h5>
+                            <h5 class="card-title" th:text="|TEMATICA: ${examen.examenDTO.tematica.nombre}|">Tematica</h5>
+                            <h5 class="card-title" th:text="|VECES RESUELTO: ${examen.cantidad}|">Tematica</h5>
+                        </div>
+
+
+                    </div>
+
+                    <div style="width: 100%;  align-items: center;">
+
+                       
+                    <a  style=" width: 100%;" th:href="@{/examen/realizar/__${examen.examenDTO.id}__}" class="btn btn-outline-secondary  botonesSecciones">HACER EXAMEN</a>
+
+                    </div>
+
+                </DIV>
+
+                  
+
+
+
+                    
+                  
+                  </div>
+                </div>
+                
+            </div>
+           
+
+      
+
+
+        </div>
+        
+  
+          
+    
+        
+        </div>
+
+    
+      
+
+
+
+
+    </main>
+
+    <footer class="container-fluid" th:replace="fragmentos::footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha383-ka7Sk0Gln3gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov3+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

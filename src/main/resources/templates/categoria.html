@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>SkillTest</title>
+</head>
+
+<body>
+
+<header th:replace="fragmentos :: header"></header>
+
+
+
+
+  <main>
+
+
+
+
+    <!-- SECCION BACKEND -->
+    <div class="container-fluid seccionesMainTematica">
+
+      <h1 class="placeholder-glow">
+        <span class="placeholder col-12"> </span>
+        BACKEND
+
+
+      </h1>
+      <p>Las siguientes son nuestras tematicas mas destacadas de la categoria Backend</p>
+
+      <div class="tarjetas">
+        <div class="card text-white mb-3 tarjetasSecciones" style="width: 18rem; ">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_buopyjyz.json" background="transparent"
+            speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+          <div class="card-body">
+            <h5 class="card-title">PHYTON</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+
+        <div class="card text-white mb-3 tarjetasSecciones" style="width: 18rem;">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_zh6xtlj9.json" background="transparent"
+            speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+          <div class="card-body">
+            <h5 class="card-title">JAVA</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+
+        <div class="card text-white  mb-3 tarjetasSecciones" style="width: 18rem;">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_WVVTq8.json" background="transparent"
+            speed="0.5" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+          <div class="card-body">
+            <h5 class="card-title">C</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+      <div style=" display: flex; justify-content: center; margin-top: 3%;">
+        <div style="width: 60%; height: 40%;">
+          <a href="#" class="btn btn-primary tarjetasSecciones" style="width: 100%;  ">VER TODAS LAS TEMATICAS</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- SECCION FRONTEND -->
+    <div class="container-fluid secciones">
+
+      <h1 class="placeholder-glow">
+        <span class="placeholder col-12"> </span>
+        FRONTEND
+
+
+      </h1>
+      <p>Las siguientes son nuestras tematicas mas destacadas de la categoria Frontend</p>
+
+
+
+
+      <div class="container-fluid">
+
+        <div class="tarjetas">
+          <div class="card text-white  mb-3 tarjetasSecciones" style="width: 18rem;">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_lwpbfw74.json" background="transparent"
+              speed="0.5" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            <div class="card-body">
+              <h5 class="card-title">JAVASCRIPT</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+
+          <div class="card text-white  mb-3 tarjetasSecciones" style="width: 18rem;">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json"
+              background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+
+          <div class="card text-white  mb-3 tarjetasSecciones"
+            style="width: 18rem; border-radius: 40px; box-shadow: #00efe3 12px 8px 30px; background-color: #3d23b2;">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_d6czzyqr.json"
+              background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style=" display: flex; justify-content: center; margin-top: 3%;">
+          <div style="width: 60%; height: 40%;">
+            <a href="#" class="btn btn-primary tarjetasSecciones" style="width: 100%;  ">VER TODAS LAS TEMATICAS</a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+    <!-- SECCION BASES DE DATOS -->
+    <div class="container-fluid secciones">
+
+      <h1 class="placeholder-glow">
+        <span class="placeholder col-12"> </span>
+        BASES DE DATOS
+
+
+      </h1>
+      <p>Las siguientes son nuestras tematicas mas destacadas de la categoria Bases de Datos</p>
+
+
+
+
+      <div class="container-fluid">
+
+        <div class="tarjetas">
+          <div class="card text-white  mb-3 tarjetasSecciones" style="width: 18rem;">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_qv9hdeyy.json" background="transparent"
+              speed="2" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            <div class="card-body">
+              <h5 class="card-title">DISEÑO DE BASES DE DATOS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+
+            </div>
+          </div>
+
+          <div class="card text-white  mb-3 tarjetasSecciones" style="width: 18rem; border-radius: 40px; ">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_vrxzhzfk.json" background="transparent"
+              speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            <div class="card-body">
+              <h5 class="card-title">SEGURIDAD</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+
+          <div class="card text-white  mb-3 tarjetasSecciones" style="width: 18rem;">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_bxiuVv.json" background="transparent"
+              speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            <div class="card-body">
+              <h5 class="card-title">MYSQL WORKBENCH</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div style=" display: flex; justify-content: center; margin-top: 3%;">
+          <div style="width: 60%; height: 40%;">
+            <a th:href="@{/categoria/1}" class="btn btn-primary tarjetasSecciones" style="width: 100%;  ">VER TODAS LAS TEMATICAS</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </main>
+
+  <footer class="container-fluid" th:replace="fragmentos::footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

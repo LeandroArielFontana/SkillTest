@@ -1,0 +1,638 @@
+*{
+
+
+color: white;
+font-family: 'Tomorrow', sans-serif;
+text-decoration: none !important;
+}
+
+body{
+
+    background-image: url(../img/background.jpeg);
+
+}
+
+main{
+
+
+background-image: url(../img/background.jpeg);
+
+
+
+
+}
+
+nav{
+
+
+font-size: large;
+color: white;
+
+
+}
+
+.botonesRegistro{
+
+
+
+display: block;
+
+
+
+}
+
+.botones{
+font-size: small;
+width: 90px;
+display: inline-block;
+justify-content: space-around;
+
+
+}
+
+.botonesTarjetas{
+
+
+  background-color: #00efe3;
+   color: rgb(0, 0, 0);
+
+
+}
+
+
+.secciones{
+
+    height: 100%;
+    background-image: url(../img/databases.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+
+
+
+
+}
+
+.seccionPrincipal{
+     margin-top: 5%;
+     height: 100%;
+    margin-bottom: 3%;
+    background-image: url(../img/background.jpeg);
+    background-repeat: no-repeat;
+
+
+
+}
+
+.botonPrincipales{
+
+    background-color: #ff51c2!important;
+     color: rgb(255, 255, 255) !important; 
+     border-radius: 20px !important;
+
+
+}
+
+
+.tarjetasMain{
+
+background-color: #521d39 !important ;
+border-radius: 40px !important;
+box-shadow: #ff51c2 12px 8px 20px !important; 
+ margin-top: 5% !important;
+ transition: all 400ms ease;
+
+
+
+}
+
+.tarjetasMain:hover{
+ 
+transform: translateY(-4%);
+box-shadow: #ff51c2 12px 8px 50px !important; 
+
+
+
+}
+
+
+
+.top{
+
+width: 40%;
+height: 30%;
+display: flex;
+position: relative;
+top: 100px;
+
+
+
+}
+
+
+
+.tarjetas{
+
+margin-top: 50px;
+display: flex;
+justify-content: space-around;
+
+
+
+}
+
+.tarjetasSecciones{
+
+
+    border-radius: 40px !important;
+    box-shadow: #00efe3 12px 8px 30px !important;
+    background-color: #3d289e !important;
+    transition: all 400ms ease;
+    margin-bottom: 10%;
+   
+
+
+
+
+}
+
+
+.tarjetasSecciones:hover{
+
+transform: translateY(-3%);
+box-shadow: #ff51c2 12px 20px 60px !important; 
+
+}
+
+.botonesSecciones{
+    background-color: #00efe3 !important;
+     color: rgb(0, 0, 0) !important;
+      border-radius: 30px !important;
+    }
+
+.botonesSecciones:hover{
+
+    transform: translateY(-3%);
+    background-color: #ff51c2 !important;
+  
+
+
+
+}
+
+.logo{
+
+
+border-radius: 30px !important;
+transition: all 400ms ease;
+
+
+
+}
+
+.logo:hover{
+
+    transform: translateY(-3%);
+    box-shadow: #ff51c2 12px 1px 70px !important; 
+    text-shadow: #ff51c2 1px 1px !important; 
+
+
+}
+
+
+.opciones{
+
+    border-radius: 30px !important;
+    transition: all 400ms ease;
+   
+
+
+}
+
+.opciones:hover{
+
+    transform: translateY(-3%);
+    text-shadow: #ff51c2 1px 1px !important; 
+    
+
+  
+
+
+}
+
+.animacionMain{
+
+    transition: all 100ms ease;
+
+}
+
+.animacionMain:hover{
+
+    transform: translateY(-3%);
+
+
+}
+
+
+
+footer{
+
+    color: white;
+    padding: 5%;
+    width: 100%;
+    background-color: #2E4159;
+    display: flex;
+    transition: all 100ms ease;
+    font-size: large;
+
+}
+
+
+
+footer:hover{
+
+    transform: translateY(1%);
+    box-shadow: #ff51c2 12px 1px 70px !important; 
+ 
+
+
+}
+
+
+
+.contenidoFooter{
+
+display: flex;
+justify-content: space-around;
+
+
+}
+
+
+.tematicas{
+
+display: flex;
+
+
+
+}
+
+
+.examenesTematica{
+
+transition: all 100ms ease;
+border-radius: 100px;
+margin-top: 10%;
+padding: 5%;
+
+}
+
+.examenesTematica:hover{
+
+
+
+    transform: translateY(-7%);
+    text-shadow: #ff51c2 1px 1px !important; 
+
+   
+   
+ 
+
+
+
+
+}
+
+
+.seccionesMainTematica{
+
+    margin-top: 5.5%;
+    height: 100%;
+    background-image: url(../img/databases.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+
+
+
+
+}
+
+
+
+.botonComenzarExamen{
+
+    background-color: #00efe3 !important;
+     color: rgb(255, 255, 255) !important;
+     transition: all 100ms ease;
+
+
+
+}
+
+
+.botonComenzarExamen:hover{
+
+
+
+    background-color: #ff51c2!important;
+    color: rgb(255, 255, 255) !important;
+
+}
+
+
+.selectForm{
+
+width: 100%;
+height: 100%;
+color: black ;
+border-radius: 40px;
+
+
+
+}
+
+
+.inputExamen{
+
+    border-radius: 40px !important;
+
+
+
+}
+
+option{
+
+color: black;
+
+
+}
+
+
+.botonesCrear{
+
+
+
+    background-color: #00efe3 !important;
+    color: rgb(0, 0, 0) !important;
+     border-radius: 30px !important;
+     transition: all 100ms ease;
+     box-shadow: #00efe3 12px 8px 30px !important;
+
+
+
+
+}
+
+
+.botonesCrear:hover{
+
+
+    transform: translateY(-7%);
+    box-shadow: #00efe3 12px 8px 40px !important;
+
+}
+
+.top5{
+
+
+margin-top: 10%;
+
+
+}
+
+
+
+.tarjetaNota{
+
+    background-color: #521d39 !important ;
+    border-radius: 40px !important;
+    box-shadow: #ff51c2 12px 8px 20px !important;
+     margin-top: 5% !important;
+     transition: all 400ms ease;
+
+
+
+    }
+
+    .tarjetaNota:hover{
+
+    transform: translateY(-4%);
+    box-shadow: #ff51c2 12px 8px 50px !important;
+
+
+
+    }
+
+
+    .top{
+
+
+display: flex;
+justify-content: space-around;
+
+
+    }
+
+
+
+    .tarjetaTop{
+
+
+        border-radius: 40px !important;
+        background-color: #553bcc !important;
+        transition: all 400ms ease;
+        margin-bottom: 1%;
+        margin-top: 1;
+
+
+
+
+
+    }
+
+
+    .tarjetaTop:hover{
+
+    transform: translateY(-3%);
+
+
+    }
+
+
+    .tarjetaTopMain{
+
+
+        border-radius: 40px !important;
+        box-shadow: #00efe3 12px 8px 30px !important;
+        background-color: #3d289e !important;
+        transition: all 400ms ease;
+        margin-bottom: 10%;
+
+
+
+
+
+    }
+
+
+    .tarjetaTopMain:hover{
+
+    transform: translateY(-3%);
+
+
+    }
+
+
+
+    .botonLogin{
+
+        background-color: #521d39 !important ;
+         color: rgb(255, 255, 255) !important;
+         border-radius: 100px;
+         transition: all 100ms ease;
+
+
+
+
+    }
+
+
+    .botonLogin:hover{
+
+
+
+         transform: translateY(5%);
+          box-shadow: #ff51c2 12px 1px 70px !important;
+
+    }
+
+
+    .dropDown{
+
+            background-color: #2E4159 !important;
+            transition: all 400ms ease;
+            color: white !important;
+
+
+
+
+        }
+
+        .dropDown:hover{
+
+
+
+            transform: translateY(-9%);
+
+
+
+
+        }
+
+
+
+         .botonRegister{
+
+               background-color: #521d39 !important ;
+               color: rgb(255, 255, 255) !important;
+               text-decoration: none;
+               padding: 2%;
+               border-radius: 100px;
+               margin-top: 1%;
+
+
+
+
+
+            }
+
+            .dropDownExamen{
+
+
+                    background-color: #521d39 !important ;
+                    color: white  !important;
+                    border-radius: 100px  !important;
+                    font-size: large;
+                    border-radius: 30px !important;
+                    transition: all 400ms ease;
+                    background: #521d39 !important ;
+
+
+
+
+
+                }
+
+                .dropDownExamen:hover{
+
+                    transform: translateY(-3%);
+                    text-shadow: #ff51c2 1px 1px !important;
+
+
+
+
+
+
+                }
+
+.tarjetasExcepciones{
+
+
+        border-radius: 40px !important;
+        box-shadow: #d60505 12px 20px 60px !important;
+        background-color: #e41a1a !important;
+        transition: all 400ms ease;
+        color: rgb(0, 0, 0);
+        margin-bottom: 10%;
+
+
+
+
+
+    }
+
+
+    .tarjetasExcepciones:hover{
+
+    transform: translateY(-3%);
+    box-shadow: #d60505 12px 20px 60px !important;
+
+    }
+
+
+
+    .botonCrearExamen{
+
+
+        border-radius: 40px !important;
+        box-shadow: #ff51c2 12px 8px 20px !important;
+        background-color: #521d39 !important ;
+        transition: all 400ms ease;
+        margin-bottom: 10%;
+
+
+
+
+
+    }
+
+
+    .botonCrearExamen:hover{
+
+
+        transform: translateY(-4%);
+        box-shadow: #ff51c2 12px 8px 50px !important;
+    }
+
+
+
+
+
+
+
+
